@@ -21,8 +21,7 @@ cinema_id = 30
 d = new Date
 month = d.getMonth() + 1
 month = '0' + month if month < 10
-#date = "#{d.getFullYear()}#{month}#{d.getDate()}"  
-date = "20160211"
+date = "#{d.getFullYear()}#{month}#{d.getDate()}"  
 movies_url = "http://www2.cineworld.co.uk/api/quickbook/films?key=#{key}&cinema=#{cinema_id}&date=#{date}"
 performances_url= "http://www2.cineworld.co.uk/api/quickbook/performances?key=#{key}&cinema=#{cinema_id}&date=#{date}"
 
